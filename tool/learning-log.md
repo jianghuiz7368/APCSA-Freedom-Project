@@ -30,6 +30,11 @@ Project: **Freedom Project**
 * A useful feature of the Package Manager is the My Assets section, which catalogs assets you have imported from other sources.
 * You have to import the documentation into your package manager in order to use that specific function.
 
+11/13/23
+* Today I tried to make the sphere that I created interactive. I want to make it move whenever the user press left or right by adding C Sharp scripts as a component of the sphere.
+* I used videos from this [channel](https://www.youtube.com/@IndividualKex) to help me
+* I followed the tutorials, however my code did not work as intended. The code was supposed to get the sphere's axis and when the user press left the axis will show -1 but it doesn't show anything.
+
 
 <!-- 
 * Links you used today (websites, videos, etc)
