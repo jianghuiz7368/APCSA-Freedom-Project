@@ -10,7 +10,7 @@ The first thing I did is setting up everything like creating a unity account and
 * T: corresponds to the Rect Transform tool, to scale in 2D
 * Y: corresponds to theTransform tool, to move, scale, and rotate with one Gizmo
 
-After I got used to the editor screen, I tried to create game objects. I first created a sphere and used the scale tool to change it size. Then I tried to add some component to the sphere so it can actually do something. I followed the tutorial on this [YouTube channel](https://www.youtube.com/@IndividualKex). After watching some tutorials I added a component named Rigidbody so the sphere will have physics and fall down when you press play. Then I added a floor so that the sphere doesn't go through the map. 
+After I got used to the editor screen, I tried to create game objects. I first created a sphere and used the scale tool to change it size. Then I tried to add some component to the sphere so it can actually do something. I followed the tutorial on this [YouTube channel](https://www.youtube.com/@IndividualKex). After watching some tutorials I added a component named Rigidbody so the sphere will have physics and fall down when you press play. Then I added a floor so that the sphere doesn't go through the map. Later on, I tried to make the sphere interactive by making it move whenever the player presses the left or right key. With the help of the tutorials from the channel I was able to figure out the code to make that happen. However, it didnt work as intended and an error showed up. On my next blog, I'll be fixing this error and try to get the code to work.
 
 
 
