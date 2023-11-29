@@ -12,6 +12,9 @@ The first thing I did is setting up everything like creating a unity account and
 
 After I got used to the editor screen, I tried to create game objects. I first created a sphere and used the scale tool to change it size. Then I tried to add some component to the sphere so it can actually do something. I followed the tutorial on this [YouTube channel](https://www.youtube.com/@IndividualKex). After watching some tutorials I added a component named Rigidbody so the sphere will have physics and fall down when you press play. Then I added a floor so that the sphere doesn't go through the map. Later on, I tried to make the sphere interactive by making it move whenever the player presses the left or right key. With the help of the tutorials from the channel I was able to figure out the code to make that happen. However, it didnt work as intended and an error showed up. On my next blog, I'll be fixing this error and try to get the code to work.
 
+<img width="329" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/1ed5187f-30b0-4c9b-ae88-1dd3c57b3d73">
+
+
 
 
 For skills, I think I've learned **Problem decomposition** and **How to Google**. When I was researching and learning unity, I break up my tasks into parts. For the first part I need to learn how to set up unity correctly, and then learn about the fundemental. After doing all of that I can start tinkering and creating stuff. Also when I was searching for information, the command ctrl+f saved me a lot of time because it allows me to find the information I needed by selecting the words I typed.
