@@ -14,6 +14,8 @@ After I got used to the editor screen, I tried to create game objects. I first c
 
 <img width="329" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/1ed5187f-30b0-4c9b-ae88-1dd3c57b3d73">
 
+<img width="743" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/debc319c-d263-4fee-9266-8e6881050089">
+
 
 
 
