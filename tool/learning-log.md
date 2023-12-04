@@ -35,6 +35,9 @@ Project: **Freedom Project**
 * I used videos from this [channel](https://www.youtube.com/@IndividualKex) to help me
 * I followed the tutorials, however my code did not work as intended. The code was supposed to get the sphere's axis and when the user press left the axis will show -1 but it doesn't show anything.
 
+11/27/23
+* I tried to fix the error of the code and noticed that I had the wrong class name.
+* It got rid of some of the error but there are still some that remain.
 
 <!-- 
 * Links you used today (websites, videos, etc)
