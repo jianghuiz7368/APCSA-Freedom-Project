@@ -41,8 +41,22 @@ Project: **Freedom Project**
 
 12/3/23
 * I got rid of the errors by comparing my code to the [video](https://www.youtube.com/watch?v=4DPWvv7dh5E)
-* <img width="440" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/a9d9fabd-de23-40d1-9a02-b68e031d6ed3">
-* However the sphere still wouldn't move
+```csharp
+  public class Player : MonoBehaviour
+  {
+	 int moveDir;
+  
+    void Update() 
+	{
+	   moveDir = (int)Input.GetAxisRaw( "Horizontal");
+	   Debug. Log (moveDir);
+	}
+```
+* This code will make the cordinate increase by 1 when you press the right arrow, and decrease by 1 when you press the left arrow.
+* The sphere is still unable to move like this.
+
+12/10/23
+* 
 
 
 <!-- 
