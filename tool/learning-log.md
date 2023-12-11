@@ -49,14 +49,35 @@ Project: **Freedom Project**
     void Update() 
 	{
 	   moveDir = (int)Input.GetAxisRaw( "Horizontal");
-	   Debug. Log (moveDir);
+	   Debug.Log (moveDir);
 	}
 ```
 * This code will make the cordinate increase by 1 when you press the right arrow, and decrease by 1 when you press the left arrow.
 * The sphere is still unable to move like this.
 
 12/10/23
-* 
+* In order for the sphere to move I need to update's position every time the coordinate change
+* By following the same tutorial, I learned that I need to get the `rigidBody` component and to do so we do:
+```csharp
+void Awake() {
+   ridgidBody = GetComponent<Rigidbody>();
+} 
+```
+After doing that, I learned about the difference between `Update()` method and `FixedUpdate()` method. The difference is that `Update` can only run once per frame and `FixedUpdate` can run however time you want. It could be once, zero, or several times per frame. [website](https://stackoverflow.com/questions/34447682/what-is-the-difference-between-update-fixedupdate-in-unity) 
+
+* I added a `FixedUpdate` method into my code:
+```csharp
+  void FixedUpdate(){
+		rigidBody.velocity = new Vector3 (moveDir, rigidBody.velocity.y, 0);
+	}
+```
+This sets the `ridgidBody`'s velocity into the input direction and the ball can finally move.
+
+* I tried to change the sphere's moving speed by multiplying the velocity by a number: `rigidBody.velocity = new Vector3 (moveDir*10, rigidBody.velocity.y, 0);`
+and the ball did move faster than before.`
+
+
+
 
 
 <!-- 
