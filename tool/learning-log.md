@@ -81,18 +81,19 @@ and the ball did move faster than before.`
 - I used this [video](https://www.youtube.com/watch?v=CieCJ2mNTXE&t=929s) to help me
 - In order to make my object jump, I first need to make my floor 3D so I changed it into a cube.
 - Second thing I did was to add an if statement:
-  ```java
+ ```java
   if(input.GetButtonDown("Jump"){
   	jump();
   }
 ```
-into the `Update` function
+- I added this into the `Update` function
 - Then I created a `jump` function that sets the upward velocity of the object into a variable that I created, `jumpSpeed`
+
 ```java
 void jump(){
 	ridgitBody.velocity = new Vector3(ridgitBody.velocity.x, jumpSpeed, 0);
 {
-
+```
 The object is able to jump with this code but, it allows the user to jump forever if they press the jump button over non-stop.
 
 
