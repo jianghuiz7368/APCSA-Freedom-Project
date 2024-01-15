@@ -98,7 +98,8 @@ The object is able to jump with this code but, it allows the user to jump foreve
 
 1/15/24
 
-* 
+* In order to stop the ball from jumping infinitely, I need to make a ground check so that the it will know that it's touching the ground.
+* need to create a boolean
 
 <!-- 
 * Links you used today (websites, videos, etc)
