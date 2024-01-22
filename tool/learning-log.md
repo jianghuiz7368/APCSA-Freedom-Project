@@ -101,6 +101,24 @@ The object is able to jump with this code but, it allows the user to jump foreve
 * In order to stop the ball from jumping infinitely, I need to make a ground check so that the it will know that it's touching the ground.
 * need to create a boolean
 
+  1/21/24
+
+  * I used this [website](https://learn.unity.com/tutorial/modifying-gravity-color-size-lifetime-of-particle-systems#5f08702cedbc2a00229c9ac8) to learn how to add particles to my objects
+  * I want to make paricles show up whenever the object moves or jumps so I watched a video on it. [video](https://www.youtube.com/watch?time_continue=2&v=ZPbInUXqVzg&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY&feature=emb_logo)
+    I need to create 2 events
+    `public UnityEvents onBeginMovingLeft` and `public UnityEvents onBeginMovingRight`
+    After that I need an if statement to check if the object is moving left or right
+    ```csharp
+    set{
+     if (_moveX != value){
+           if(value > 0 && _moveX <= 0)
+    		onBeginMovingLeft?.Invoke();
+           else if(value < 0 && _moveX >= 0)
+    		onBeginMovingRight?.Invoke();
+    	   _moveX=value;
+   	 }
+    ```
+Then all I need to do is just add the particles into the events and it there will be particles when the object moves.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
