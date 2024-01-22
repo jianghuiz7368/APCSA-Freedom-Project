@@ -118,7 +118,7 @@ The object is able to jump with this code but, it allows the user to jump foreve
     	   _moveX=value;
    	 }
     ```
-Then all I need to do is just add the particles into the events and it there will be particles when the object moves.
+Then all I need to do is just add the particles into the events in the drop down menu and it there will be particles when the object moves.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
