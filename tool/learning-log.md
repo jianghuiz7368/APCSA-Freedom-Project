@@ -119,6 +119,26 @@ The object is able to jump with this code but, it allows the user to jump foreve
    	 }
     ```
 Then all I need to do is just add the particles into the events in the drop down menu and it there will be particles when the object moves.
+
+1/29/24
+
+* Today I want to try to make something in 2D
+* I used this [video](https://www.youtube.com/watch?v=1QfxdUpVh5I&t=29s) to help me
+* The first thing I tried was to make the player attack by doing:
+  ```CSharp
+  void Update{
+  
+ 	 if(timeBtwAttack <= 0){
+  		if(Input.GetKey(KeyCode.Space)){
+  			Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll()
+ 		 }
+  	}
+  }
+  ```
+  This code will check if the time between an attack is less or equal to 0 and if it is true then you can attack by pressing space. The OverlapCircleAll(); is a function that creates an invisible cirlce and any enemy inside it will be dealt damage.
+
+
+  
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
