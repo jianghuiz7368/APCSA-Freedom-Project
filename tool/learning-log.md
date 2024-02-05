@@ -137,8 +137,20 @@ Then all I need to do is just add the particles into the events in the drop down
   ```
   This code will check if the time between an attack is less or equal to 0 and if it is true then you can attack by pressing space. The OverlapCircleAll(); is a function that creates an invisible cirlce and any enemy inside it will be dealt damage.
 
+2/4/24
 
-  
+Today I learned something called `Gizmos`, they are used to give visual debugging or setup aids in the Scene view. I found it on this [website](https://docs.unity3d.com/ScriptReference/Gizmos.html)
+
+* There are many properties that you can use with it like `color`, and `exposure`.
+* There are also methods that you can use like `DrawWireSphere` and more
+* I want to use the `Gizmos` to help visualize the range and shape of the player's attack
+```CSharp
+void OnDrawGizmosSelected(){
+  Gizmos.color = Color.red;
+  Gizmos.DrawWireSphere(attackPos.position, attackRange)
+}
+```
+`OnDrawGizmosSelected` will draw the `Gizmos` when the player is selected and then the Gizmos will appear red in the form of a sphere which takes in the position of the attack(attackPos) and the radius(attackRange).
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
