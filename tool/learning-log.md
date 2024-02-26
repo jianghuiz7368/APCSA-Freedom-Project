@@ -153,6 +153,7 @@ void OnDrawGizmosSelected(){
 `OnDrawGizmosSelected` will draw the `Gizmos` when the player is selected and then the Gizmos will appear red in the form of a sphere which takes in the position of the attack(attackPos) and the radius(attackRange).
 
 2/25/24
+
 Today I began learning how to build my own map
 * I used this [video](https://www.youtube.com/watch?v=gHU5RQWbmWE) to help me
 * By following the tutorial, I wrote down the first part of the code that allows me to generate my dungeon which I need for my map
