@@ -151,6 +151,23 @@ void OnDrawGizmosSelected(){
 }
 ```
 `OnDrawGizmosSelected` will draw the `Gizmos` when the player is selected and then the Gizmos will appear red in the form of a sphere which takes in the position of the attack(attackPos) and the radius(attackRange).
+
+2/25/24
+Today I began learning how to build my own map
+* I used this [video](https://www.youtube.com/watch?v=gHU5RQWbmWE) to help me
+* By following the tutorial, I wrote down the first part of the code that allows me to generate my dungeon which I need for my map
+ ```CSharp
+  public class DungeonGenerator : MonoBehaviour
+{
+    public class Cell
+    {
+        public bool visited = false;
+        public bool[] status = new bool[4];
+    }
+  public Vector2 size;
+  public int startPos = 0;
+ ```
+My goal is to have many rooms and whenever the player go through a door a new room gets generated. This code checks if the room is already visited and sets the start value of each room like it's size and start position.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
