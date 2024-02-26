@@ -169,6 +169,9 @@ Today I began learning how to build my own map
   public int startPos = 0;
  ```
 My goal is to have many rooms and whenever the player go through a door a new room gets generated. This code checks if the room is already visited and sets the start value of each room like it's size and start position.
+2/26/24
+
+Today, I continue on the process of making my map.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
