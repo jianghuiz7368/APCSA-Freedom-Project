@@ -160,18 +160,47 @@ Today I began learning how to build my own map
  ```CSharp
   public class DungeonGenerator : MonoBehaviour
 {
-    public class Cell
-    {
-        public bool visited = false;
-        public bool[] status = new bool[4];
-    }
-  public Vector2 size;
-  public int startPos = 0;
- ```
+public class Cell
+{
+public bool visited = false;
+public bool[] status = new bool[4];
+}
+public Vector2 size;
+public int startPos = 0;
+```
 My goal is to have many rooms and whenever the player go through a door a new room gets generated. This code checks if the room is already visited and sets the start value of each room like it's size and start position.
 3/2/24
+Today, I continue on the process of making my dungeon map using this [tutorial](https://www.youtube.com/watch?v=gHU5RQWbmWE). I am going to work on making the map loop so that it form some kind of maze.
 
-Today, I continue on the process of making my map.
+```CSharp
+void MazeGenerator()
+{
+  board = new List<Cell>();
+
+  for (int i = 0; i < size.x; i++)
+  {
+    for (int j = 0; j < size.y; j++)
+    {
+	board.Add(new Cell());
+    }
+  }
+
+  int currentCell = startPos;
+  Stack<int> path = new Stack<int>();
+  int k = 0;
+
+  while (k<1000)
+  {
+    k++;
+    board[currentCell].visited = true;
+    if(currentCell == board.Count - 1)
+    {
+      break;
+    }
+```
+After I initalize the board as a list of cells, I must create this board with all the cells that it must have. So, I made a nested for loop to go through all the size at x and y. The `currentCell` variable is used to keep track of which position I'm at so it is initialized to equal to the starting position. 
+
+`Stack` is a special type of collection that stores elements in LIFO style (Last In First Out). So, the last thing gets added, the first thing gets removed. I can use this to keep track of the paths I'm currently at. 
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
