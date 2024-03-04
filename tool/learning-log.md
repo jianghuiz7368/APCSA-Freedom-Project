@@ -152,7 +152,7 @@ void OnDrawGizmosSelected(){
 ```
 `OnDrawGizmosSelected` will draw the `Gizmos` when the player is selected and then the Gizmos will appear red in the form of a sphere which takes in the position of the attack(attackPos) and the radius(attackRange).
 
-2/25/24
+2/26/24
 
 Today I began learning how to build my own map
 * I used this [video](https://www.youtube.com/watch?v=gHU5RQWbmWE) to help me
@@ -169,7 +169,7 @@ Today I began learning how to build my own map
   public int startPos = 0;
  ```
 My goal is to have many rooms and whenever the player go through a door a new room gets generated. This code checks if the room is already visited and sets the start value of each room like it's size and start position.
-2/26/24
+3/2/24
 
 Today, I continue on the process of making my map.
 <!-- 
