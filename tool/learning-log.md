@@ -169,6 +169,8 @@ public Vector2 size;
 public int startPos = 0;
 ```
 My goal is to have many rooms and whenever the player go through a door a new room gets generated. This code checks if the room is already visited and sets the start value of each room like it's size and start position.
+
+
 3/2/24
 Today, I continue on the process of making my dungeon map using this [tutorial](https://www.youtube.com/watch?v=gHU5RQWbmWE). I am going to work on making the map loop so that it form some kind of maze.
 
