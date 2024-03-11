@@ -205,7 +205,7 @@ After I initalize the board as a list of cells, I must create this board with al
 `Stack` is a special type of collection that stores elements in LIFO style (Last In First Out). So, the last thing gets added, the first thing gets removed. I can use this to keep track of the paths I'm currently at. 
 
 
-3/11/24
+3/10/24
 
 Today I continue my code for the maze generater [(video)](https://www.youtube.com/watch?v=gHU5RQWbmWE&t=951s).
 * Last time I created the grid for all the cells and a variable to keep track of the current user position.
