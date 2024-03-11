@@ -203,6 +203,45 @@ void MazeGenerator()
 After I initalize the board as a list of cells, I must create this board with all the cells that it must have. So, I made a nested for loop to go through all the size at x and y. The `currentCell` variable is used to keep track of which position I'm at so it is initialized to equal to the starting position. 
 
 `Stack` is a special type of collection that stores elements in LIFO style (Last In First Out). So, the last thing gets added, the first thing gets removed. I can use this to keep track of the paths I'm currently at. 
+
+
+3/11/24
+
+Today I continue my code for the maze generater [(video)](https://www.youtube.com/watch?v=gHU5RQWbmWE&t=951s).
+* Last time I created the grid for all the cells and a variable to keep track of the current user position.
+* Now I need to check the cells around the current cell to see if it has been visited
+```CSharp
+ List<int> CheckNeighbors(int cell)
+    {
+        List<int> neighbors = new List<int>();
+
+        //check up neighbor
+        if (cell - size.x >= 0 && !board[(cell-size.x)].visited)
+        {
+            neighbors.Add((cell - size.x));
+        }
+        //check down neighbor
+        if (cell + size.x < board.Count && !board[(cell + size.x)].visited)
+        {
+            neighbors.Add((cell + size.x));
+        }
+        //check right neighbor
+        if ((cell+1) % size.x != 0 && !board[(cell +1)].visited)
+        {
+            neighbors.Add((cell +1));
+        }
+        //check left neighbor
+        if (cell % size.x != 0 && !board[(cell - 1)].visited)
+        {
+            neighbors.Add((cell -1));
+        }
+        return neighbors;
+    }
+}
+```
+The `CheckNeighbors` method is going to return a list of neighbor for the cell that the player is currently in. But first we have to check if the cells had already been visited before. Only the ones that had not been visited should be put as neighbor of the current cell.
+
+For all of the direction, I have a if statement to check if they have been visited before. The first part of the if statement for each of them is to check if there is a cell that existed in that direction and then the second part will check whether it has been visited before. If it had not been visited them it's position will be added into the list of neighbor cells.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
