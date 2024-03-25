@@ -242,6 +242,37 @@ Today I continue my code for the maze generater [(video)](https://www.youtube.co
 The `CheckNeighbors` method is going to return a list of neighbor for the cell that the player is currently in. But first we have to check if the cells had already been visited before. Only the ones that had not been visited should be put as neighbor of the current cell.
 
 For all of the direction, I have a if statement to check if they have been visited before. The first part of the if statement for each of them is to check if there is a cell that existed in that direction and then the second part will check whether it has been visited before. If it had not been visited them it's position will be added into the list of neighbor cells.
+
+3/23/24
+* Today I will be finishing the maze generator [tutorial](https://www.youtube.com/watch?v=gHU5RQWbmWE&t=1284s)
+* Last time I checked for if there is neighbor rooms around the current room
+* Now I want to check for if there is no neighbor rooms
+```CSharp
+    if (neighbors.Count == 0)
+            {
+                if (path.Count == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    currentCell = path.Pop();
+                }
+            }
+            else
+            {
+                path.Push(currentCell);
+
+                int newCell = neighbors[Random.Range(0, neighbors.Count)];
+
+                if (newCell > currentCell)
+                {
+                    
+```
+This code checks if there are no neighbors then the loop for checking whether the room has been visited will stop and if path does not equal to 0 then the current room would be equal to the last cell that is added to the path. However if the neighbor count does not equal to 0 then the current room will be added to the path and then the next room will be chosen randomly from those neighbor rooms that are stored in path. 
+
+* The next step is to check which direction would the next room be at (left, right, up or down)
+            
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
