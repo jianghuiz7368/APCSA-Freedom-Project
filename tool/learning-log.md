@@ -272,6 +272,15 @@ For all of the direction, I have a if statement to check if they have been visit
 This code checks if there are no neighbors then the loop for checking whether the room has been visited will stop and if path does not equal to 0 then the current room would be equal to the last cell that is added to the path. However if the neighbor count does not equal to 0 then the current room will be added to the path and then the next room will be chosen randomly from those neighbor rooms that are stored in path. 
 
 * The next step is to check which direction would the next room be at (left, right, up or down)
+
+3/31/24
+
+* Today I worked on the camera movement of the player so that the player can rotate their camera in the game
+<img width="468" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/fa6a6959-e1a1-47a6-9f75-d41b800fec6e">
+
+* This code allow the user to move their camera based on the position of their mouse and the sensativity. It also prevents the player from looking above 90 degrees or below -90 degree because if there are no limits then their head would be able to turn in 360 degrees. 
+* There is one mistake in this because when I press play, the player just disappears and I can't find it anymore.
+  
             
 <!-- 
 * Links you used today (websites, videos, etc)
