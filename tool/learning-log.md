@@ -280,6 +280,15 @@ This code checks if there are no neighbors then the loop for checking whether th
 
 * This code allow the user to move their camera based on the position of their mouse and the sensativity. It also prevents the player from looking above 90 degrees or below -90 degree because if there are no limits then their head would be able to turn in 360 degrees. 
 * There is one mistake in this because when I press play, the player just disappears and I can't find it anymore.
+
+4/7/24
+Today I tried character movements
+* In order to move the player, I need a `transform` for my oreientation and a variable for my speed.
+* Then I need a place to store my input(horizontally and vertically)
+* <img width="380" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/ca382da0-aa34-4b20-8e5b-f6b51fd984bb">
+
+The `myInput` method collects the keyboard input and then I called it in the `update` method so the direction would update every time a new input is stored. The `movePlayer` method makes the player walk in the direction that their looking at. Then it sets the speed by using `AddForce`.
+
   
             
 <!-- 
