@@ -289,6 +289,13 @@ Today I tried character movements
 
 The `myInput` method collects the keyboard input and then I called it in the `update` method so the direction would update every time a new input is stored. The `movePlayer` method makes the player walk in the direction that their looking at. Then it sets the speed by using `AddForce`.
 
+4/14/24
+* After the player can move around, the speed just keep getting faster and faster. Now I need to set a speed limit that I can control.
+* Since the player is sliding and the speed is increasing infinitely, I need to add a `drag`. A `drag` is a property that represents the tendency of an object to slow down due to friction with the air or water that surrounds it.
+  <img width="681" alt="image" src="https://github.com/jianghuiz7368/apcsa-freedom-project/assets/91745147/c5abeae2-e6b8-47d6-977e-d5442821bfb3">
+  
+This code checks whether the player is on ground or not. If the player is grounded then the `drag` will apply to the player but if it's not then the `drag` would be 0. This would slow the player down when they contact with the ground so their speed don't increase nonestop.
+
   
             
 <!-- 
