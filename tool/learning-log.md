@@ -296,8 +296,38 @@ The `myInput` method collects the keyboard input and then I called it in the `up
   
 This code checks whether the player is on ground or not. If the player is grounded then the `drag` will apply to the player but if it's not then the `drag` would be 0. This would slow the player down when they contact with the ground so their speed don't increase nonestop.
 
-  
-            
+4/21/24
+Today I added jumping:
+```CSharp
+private void Jump()
+{
+    // reset y velocity
+    rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+    rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+}
+private void ResetJump()
+{
+    readyToJump = true;
+}
+```
+First I set the Y velocity to 0 so that you will always jump at the same height. Then apply a force using `AddForce`, I used `ForceMode.Impulse` because it adds an instant force to the object and only applies to it once. I also have a `ResetJump` function so that it sets `readyToJump` to true and you'll be able to jump again. After that I chose a key for my jump button:
+```Csharp
+ [Header("Keybinds")]
+ public KeyCode jumpKey = KeyCode.Space;
+```
+then I have a if statement checking if the key is pressed:
+```csharp
+ // when to jump
+ if (Input.GetKey(jumpKey) && readyToJump && grounded)
+ {
+     readyToJump = false;
+
+     Jump();
+
+     Invoke(nameof(ResetJump), jumpCooldown);
+ }
+```
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
