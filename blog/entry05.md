@@ -46,7 +46,7 @@ IEnumerator ResetAttackCooldown()
 ```
 Coroutines are a feature in Unity (and other game engines) that allow you to pause the execution of a method and then continue from where it left off after a specific amount of time. The coroutines ensure that after a player initiates an attack, there is a cooldown period during which the player cannot attack again, and after the cooldown, the player can attack again.
 
-
+As for skills, I've learned `Time Management` and `Growth Mindset`. During the process of making the MVP, I had a lot of things that I wanted to add to my game however, I know that I won't be able to do that before the deadline. Therefore, I made all the functions that are essential to my game and paused on the development of the functions that are more time consuming. I also reached out to many people that have experience with `Unity` and asked a lot of question. Using their answers and feedback I was able to understand my mistakes and include parts that I'm missing.
 
 [Previous](entry04.md) | [Next](entry06.md)
 
