@@ -1,7 +1,7 @@
 # Entry 5
 ##### 5/1/24
 
-I am currently on **step 5 and 6 of the Engineering Design Process**. I am creating the Minimum Viable Product(MVP) of my freedom project and testing if it works. For the most part, I've been working on the melee system of my game where the player will be able to attack the enemy using a weapon and the enemy will have AI that make them chase the player when the player is in range. In order for the melee system to work, the player first need to be able to wield the weapon so I wrote a code that allow the player to attack with the weapon:
+I am currently on **step 5 and 6 of the Engineering Design Process**. I am creating the Minimum Viable Product(MVP) of my freedom project and testing if it works. For the most part, I've been working on the melee system of my game where the player will be able to attack the enemy using a weapon and the enemy will have AI that make them chase the player when the player is in range. In order for the melee system to work, the player first need to be able to wield the weapon so I followed this [tutorial](https://www.youtube.com/watch?v=aNZw588BQBo&t=69s) and wrote a code that allow the player to attack with the weapon:
 
 ```CSharp
 public void SwordAttack()
@@ -44,7 +44,7 @@ IEnumerator ResetAttackCooldown()
         IsAttacking = false;
     }
 ```
-Coroutines are a feature in Unity (and other game engines) that allow you to pause the execution of a method and then continue from where it left off after a specific amount of time. The coroutines ensure that after a player initiates an attack, there is a cooldown period during which the player cannot attack again, and after the cooldown, the player can attack again.
+Coroutines are a feature in Unity (and other game engines) that allow you to pause the execution of a method and then continue from where it left off after a specific amount of time [(source)](https://docs.unity3d.com/Manual/Coroutines.html). The coroutines ensure that after a player initiates an attack, there is a cooldown period during which the player cannot attack again, and after the cooldown, the player can attack again.
 
 As for skills, I've learned `Time Management` and `Growth Mindset`. During the process of making the MVP, I had a lot of things that I wanted to add to my game however, I know that I won't be able to do that before the deadline. Therefore, I made all the functions that are essential to my game and paused on the development of the functions that are more time consuming. I also reached out to many people that have experience with `Unity` and asked a lot of question. Using their answers and feedback I was able to understand my mistakes and include parts that I'm missing.
 
